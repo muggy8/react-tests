@@ -4,7 +4,8 @@ const App = (function({div, h1, h2, h3, h4, a, p}){
 	return class App extends React.Component {
 		render(){
 			return div({ className: "test", title: "this is a test"},
-				"Hello World"
+				"Hello World",
+                React.createElement(App.Components.Form)
 			)
 		}
 
